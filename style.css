@@ -1,0 +1,497 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif,'Times New Roman', Times, serif;
+   transition: 0.3s;
+}
+:root{
+   --mainColor: #3CB3AB;
+   --mainHover: #157972;
+}
+/* JavaScript Area */
+/* JavaScript Area */
+/* JavaScript Area */
+.project-back {
+   display:none;
+   width: 100%;
+   position: absolute;
+   top: 100px;
+   left: 50%;
+   transform: translateX(-50%);
+   color: black;
+   padding: 10px;
+   padding:15px;
+   z-index: 1;
+}
+.project-back .container {
+   position: relative;
+   padding: 10px;
+   border-radius: 7px;
+   background: white;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+}
+.project-back .container .back-close {
+   position: absolute;
+   right: 10px;
+   top: 20px;
+   background: black;
+   background: darkgray;
+
+}
+
+.project-back h2, .project-back p {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.project-back h4 {
+   margin-bottom: 5px;
+   margin-right: 10px;
+}
+.project-back .container > div {
+   padding: 10px;
+   border: 1px solid darkgray;
+   border-radius: 7px;
+   margin-bottom: 20px;
+   transition: 0.3s;
+   position: relative;
+}
+.project-back .container > div:hover {
+   border: 3px solid var(--mainColor);
+   padding-left: 8px;
+   padding-right: 8px;
+}
+.project-back span.price-off {
+   color: var(--mainColor);
+}
+.project-back .container > div > span:first-child {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+}
+.project-back .container > div > div:first-child {
+   display: flex;
+   flex-flow: column;
+}
+.project-back .container > div > div:last-child {
+   border-width: 1px 0 0 0;
+   border-style: solid;
+   border-color: darkgray;
+   padding: 10px 0;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   display: none;
+}
+.project-back .container > div > div:last-child > span:first-child {
+   margin-bottom: 20px;
+   font-weight: 400;
+   color: dimgray;
+   
+}
+.project-back .container > div > div:last-child > span:last-child {
+   width: 100%;
+   display: flex;
+   flex-flow: row;
+   justify-content: space-between;
+}
+.project-back .container > div > div:last-child > span:last-child span {
+   padding: 10px 15px;
+   width: 100px;
+   text-align: center;
+   color: white;
+   border-radius: 20px;
+}
+.project-back .container > div > div:last-child > span:last-child span:first-child {
+   background: white;
+   color: black;
+   border: 1px solid dimgray;
+}
+.project-back .container > div > div:last-child > span:last-child span:last-child {
+   width: 50%;
+   background: var(--mainColor);
+}
+
+
+/* JavaScript Area */
+/* JavaScript Area */
+/* JavaScript Area */
+
+
+
+
+
+
+p {
+   color: darkgray;
+   font-size: 16px;
+   font-weight: 400;
+}
+.btn:not(.btn-img) {
+   transition: all 0.3s;
+   user-select: none;
+   cursor: pointer;
+   background: var(--mainColor);
+   color: white;
+   padding: 5px;
+   width: 140px;
+   text-align: center;
+   border-radius: 20px;
+}
+.btn.first-btn {
+   width: 240px !important;
+   font-size: 18px;
+   padding: 15px 0;
+   border-radius: 24px;
+}
+.btn:hover {
+   background-color: var(--mainHover) !important;
+   background: black;
+}
+/* page Setting */
+.page {
+   height: 100vh;
+   overflow-y: auto;
+   padding-bottom: 20px;
+   position: relative;
+}
+/* Start Header */
+.header {
+   background-image: url("/images/image-hero-mobile.jpg");
+   background-size: cover;
+   width: 100%;
+   height: 270px;
+}
+.header .container {
+   padding-top: 5px;
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header .links img.menu-icon {
+   position: relative;
+   z-index: 1;
+}
+.header .links ul {
+   width: calc(100% - 30px);
+   display: none;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   background: #eee;
+   border-radius: 7px;
+   color: black;
+   position: absolute;
+   top: 10%;
+   left: 50%;
+   z-index: 1;
+   transform: translateX(-50%);
+   transition: 0.3s;
+}
+.header .links ul li {
+   color: dimgray;
+   padding: 15px 20px;
+   transition: 0.3s;
+}
+.header .links ul li:not(.links ul li:last-child) {
+   border-width: 0 0 1px 0;
+   border-style: solid;
+   border-color: dimgray;
+}
+.header .links ul li:hover {
+   background: var(--mainHover);
+   color: white;
+}
+/* End Header */
+
+/* Start Section Div1 */
+.offer {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+.offer .container {
+   margin-left: auto;
+   margin-right: auto;
+   padding: 30px 15px;
+   display: flex;
+   flex-flow: column;
+   justify-content: space-around;
+   align-items: center;
+   border: 1px solid darkgray;
+   border-radius: 7px
+}
+.offer .container {
+   position: relative;
+   top: -50px;
+   background: white;
+}
+.offer .container .offerLogo {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   top: -25px;
+   left: 50%;
+   transform: translate(-50%)
+}
+.offer .container h1, .offer .container p {
+   text-align: center;
+   margin-top: 15px;
+   margin-bottom: 15px; 
+}
+
+.offer .container > div {
+   width: 100%;
+   display: flex;
+   flex-flow: row;
+   justify-content: space-between;
+   align-items: center;
+}
+/* End Section Div1 */
+
+/* Start Section Pricing */
+.pricing {
+   padding: 0 15px;
+}
+.pricing .container {
+   margin: 20px auto;
+   padding: 15px;
+   border: 1px solid darkgray;
+   border-radius: 7px;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+}
+.pricing .container div:first-child {
+   text-align: center;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+}
+.pricing .container div:first-child div {
+   padding: 20px 0;
+   width: 100%;
+}
+.pricing .container div:first-child div:not(.pricing .container div:first-child div:last-child) {
+   border-width: 0 0 1px 0;
+   border-style: solid;
+   border-color: darkgray;
+}
+
+.pricing .container div.progress {
+   width: 90%;
+   height: 8px;
+   background: lightgray;
+   border-radius: 4px;
+   margin: 10px 0;
+}
+.pricing .container .progress div {
+   width: 75%;
+   height: 8px;
+   background: var(--mainColor);
+   border-radius: 4px;
+}
+
+.pricing span {
+   color: darkgray;
+   display: block;
+   padding: 10px 0;
+}
+
+/* End Section Pricing */
+
+/* Section Last part */
+div.last-part {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+.last-part .container {
+   padding: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex;
+   flex-flow: column;
+   align-items: flex-start;
+   border: 1px solid darkgray;
+   border-radius: 7px;
+}
+.last-part .container > h3 {
+   margin-bottom: 10px;
+}
+.last-part  .container > div {
+   padding: 10px;
+   border: 1px solid darkgray;
+   border-radius: 7px;
+   margin: 10px 0;
+}
+.last-part p {
+   margin-bottom: 10px;
+}
+.last-part .container > div > div {
+   display: flex;
+   flex-flow: column;
+}
+.last-part .container > div > div > div {
+   margin-bottom: 10px;
+}
+.last-part  .container > div > div span.last {
+   margin-left: 5px;
+   font-weight: 250px;
+   color: darkgray;
+}
+.last-part .container > div > div span.heading {
+   font-size: 2em;
+   font-weight: 800;
+}
+.last-part .container > div > div span.price-offer {
+   margin-top: 10px;
+   font-size: 16px;
+   color: var(--mainColor);
+   font-weight: bold;
+}
+
+/* End Section Last part */
+
+/* Start Media Queries */
+/* Small Screens */
+@media (min-width: 768px) {
+   
+   /* Header */
+   .header {
+      background-image: url("images/image-hero-desktop.jpg")
+   }
+   .header .container {
+      width: 750px;
+   }
+   .header .links {
+      width: 50%;
+   }
+   .header .container ul {
+      display: flex;
+      justify-content: flex-end;
+      background: transparent;
+      color: white;
+      position: relative;
+   }
+   .header .container ul li {
+      display: inline-block;
+      margin-left: 25px;
+      padding: 0;
+      color: white;
+      border: 0 !important;
+   }
+   .header .container ul li:hover {
+      padding-left: 0;
+      font-weight: 300;
+      background: transparent;
+   }
+   .header .container .menu-icon {
+      display: none;
+   /* EndHeader */
+   } 
+   
+   /* Section first part */
+   .offer .container, .pricing .container, .last-part .container {
+      width: 750px  
+   }
+   .offer .container div {
+      justify-content: space-around;
+   }
+   .offer .container  div  div:first-child {
+      padding: 5px 15;
+      font-size: 16px;
+   }
+   /* End Section first part */
+   /* Section second part */
+   .pricing .container div.cont:first-child {
+      width: 100%;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100px;
+   }
+   .pricing .container div:first-child  div {
+      padding: 0;
+      width: 33%;
+      text-align: center;
+   }
+   .pricing .container div:first-child div:not(.pricing .container div:first-child div:last-child) {
+      border-width: 0 1px 0 0;
+   }
+   /* End Section second part */
+   .last-part .container > div {
+      padding: 10px 20px;
+   }
+   .last-part .container > div > div {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .last-part > span {
+      margin: 0;
+   }
+   
+}
+/* Medium Screens */
+@media (min-width: 992px) {
+   .header {
+      background-image: url("/TempleteOne/images/image-hero-desktop.jpg")
+   }
+   .header .container {
+      width: 970px;
+   }
+   .header .container ul {
+      display: flex;
+      justify-content: flex-end;
+      background: transparent;
+      color: white;
+      position: relative;
+   }
+   .header .container ul li {
+      display: inline-block;
+      margin-left: 25px;
+      padding: 0;
+   }
+   .header .container ul li:hover {
+      padding-left: 0;
+      font-weight: 300;
+   }
+   .header .container .menu-icon {
+      display: none
+   } 
+}
+/* Large Screens */
+@media (min-width: 1200px) {
+   .header {
+      background-image: url("/TempleteOne/images/image-hero-desktop.jpg")
+   }
+   .header .container {
+      width: 1170px;
+   }
+   .header .container ul {
+      display: flex;
+      justify-content: flex-end;
+      background: transparent;
+      color: white;
+      position: relative;
+   }
+   .header .container ul li {
+      display: inline-block;
+      margin-left: 25px;
+      padding: 0;
+   }
+   .header .container ul li:hover {
+      padding-left: 0;
+      font-weight: 300;
+   }
+   .header .container .menu-icon {
+      display: none
+   } 
+}
+/* End Media Queries */
